@@ -240,11 +240,11 @@ class LoginView extends GetView<LoginController> {
                               children: [
                                 SizedBox(
                                     width: double.infinity,
-                                    height: 50.0,
+                                    height: 55.0,
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
                                             backgroundColor:
-                                            Colors.black.withOpacity(0.70),
+                                            Colors.black,
                                             shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                 BorderRadius.circular(
@@ -258,7 +258,7 @@ class LoginView extends GetView<LoginController> {
                                           style: GoogleFonts.averiaGruesaLibre(
                                               fontSize: 20,
                                               fontWeight: FontWeight.w800,
-                                              color: Colors.white),
+                                            color: const Color(0xFF008A93),),
                                         ))
                                     )
                                 ),
@@ -278,8 +278,8 @@ class LoginView extends GetView<LoginController> {
                                 FittedBox(
                                   child: Text(
                                     'Belum punya akun?',
-                                    style: GoogleFonts.poppins(
-                                        fontSize: 14,
+                                    style: GoogleFonts.averiaGruesaLibre(
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w500,
                                         color: Colors.black),
                                   ),
@@ -292,8 +292,8 @@ class LoginView extends GetView<LoginController> {
                                     backgroundColor: Colors.transparent,
                                   ),
                                   child: Text('Daftar',
-                                      style: GoogleFonts.poppins(
-                                        fontSize: 14,
+                                      style: GoogleFonts.averiaGruesaLibre(
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w700,
                                         color: primary,
                                       )),

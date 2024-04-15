@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
+import 'package:reyhan_flowbook/app/data/provider/storage_provider.dart';
 import 'package:reyhan_flowbook/app/routes/app_pages.dart';
 
 import '../controllers/splash_controller.dart';
@@ -10,9 +11,16 @@ class SplashView extends GetView<SplashController> {
   const SplashView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+
+    String statusUser = StorageProvider.read(StorageKey.status);
+
     Future.delayed(
         const Duration(milliseconds: 6000), ( (){
-      Get.offAllNamed(Routes.ONBOARDING);
+          if (statusUser == 'logged'){
+            Get.offAllNamed(Routes.DASHBOARD);
+          }else{
+            Get.offAllNamed(Routes.ONBOARDING);
+          }
     })
     );
 

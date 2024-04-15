@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 import 'package:reyhan_flowbook/app/modules/bookmark/views/bookmark_view.dart';
 import 'package:reyhan_flowbook/app/modules/explorer/views/explorer_view.dart';
+import 'package:reyhan_flowbook/app/modules/historypeminjaman/views/historypeminjaman_view.dart';
 import 'package:reyhan_flowbook/app/modules/home/views/home_view.dart';
 import 'package:reyhan_flowbook/app/modules/profile/views/profile_view.dart';
 
@@ -15,6 +16,7 @@ class CustomBottomBar extends StatelessWidget {
       const SafeArea(child: HomeView()),
       const SafeArea(child: ExplorerView()),
       const SafeArea(child: BookmarkView()),
+      const SafeArea(child: HistorypeminjamanView()),
       const SafeArea(child: ProfileView()),
     ];
   }
@@ -36,6 +38,12 @@ class CustomBottomBar extends StatelessWidget {
       PersistentBottomNavBarItem(
         icon: const Icon(CupertinoIcons.bookmark),
         title: ("Bookmark"),
+        activeColorPrimary: const Color(0xFF008A93),
+        inactiveColorPrimary: CupertinoColors.systemGrey,
+      ),
+      PersistentBottomNavBarItem(
+        icon: const Icon(Icons.history_rounded),
+        title: ("History"),
         activeColorPrimary: const Color(0xFF008A93),
         inactiveColorPrimary: CupertinoColors.systemGrey,
       ),
@@ -68,7 +76,7 @@ class CustomBottomBar extends StatelessWidget {
           screens: screenDshboard(),
           items: _navBarsItems(),
           confineInSafeArea: true,
-          navBarHeight: 60.0,
+          navBarHeight: 65.0,
           backgroundColor: Colors.black,
           handleAndroidBackButtonPress: true, // Default is true.
           resizeToAvoidBottomInset: true, // This needs to be true if you want to move up the screen when keyboard appears. Default is true.

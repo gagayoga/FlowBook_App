@@ -146,7 +146,7 @@ class RegisterController extends GetxController {
             TextButton(
               autofocus: true,
               style: TextButton.styleFrom(
-                backgroundColor: const Color(0xFF56526F),
+                backgroundColor: Colors.black,
                 animationDuration: const Duration(milliseconds: 300),
               ),
               onPressed: onPressed,
@@ -155,7 +155,7 @@ class RegisterController extends GetxController {
                 style: GoogleFonts.averiaGruesaLibre(
                   fontSize: 18.0,
                   fontWeight: FontWeight.w800,
-                  color: Colors.white,
+                  color: const Color(0xFF008A93),
                 ),
               ),
             ),

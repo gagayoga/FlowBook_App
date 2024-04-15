@@ -315,7 +315,7 @@ class RegisterView extends GetView<RegisterController> {
                                     child: ElevatedButton(
                                         style: ElevatedButton.styleFrom(
                                             backgroundColor:
-                                            Colors.black.withOpacity(0.70),
+                                            Colors.black,
                                             shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                 BorderRadius.circular(
@@ -329,7 +329,7 @@ class RegisterView extends GetView<RegisterController> {
                                           style: GoogleFonts.averiaGruesaLibre(
                                               fontSize: 20,
                                               fontWeight: FontWeight.w800,
-                                              color: Colors.white),
+                                            color: const Color(0xFF008A93),),
                                         )
                                     )
                                     )
@@ -350,8 +350,8 @@ class RegisterView extends GetView<RegisterController> {
                                 FittedBox(
                                   child: Text(
                                     'Sudah punya akun?',
-                                    style: GoogleFonts.poppins(
-                                        fontSize: 14,
+                                    style: GoogleFonts.averiaGruesaLibre(
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w500,
                                         color: Colors.black),
                                   ),
@@ -364,8 +364,8 @@ class RegisterView extends GetView<RegisterController> {
                                     backgroundColor: Colors.transparent,
                                   ),
                                   child: Text('Masuk',
-                                      style: GoogleFonts.poppins(
-                                        fontSize: 14,
+                                      style: GoogleFonts.averiaGruesaLibre(
+                                        fontSize: 16,
                                         fontWeight: FontWeight.w700,
                                         color: textColor,
                                       )),

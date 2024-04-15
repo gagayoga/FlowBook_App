@@ -12,6 +12,10 @@ abstract class Routes {
   static const EXPLORER = _Paths.EXPLORER;
   static const BOOKMARK = _Paths.BOOKMARK;
   static const PROFILE = _Paths.PROFILE;
+  static const DETAILBOOK = _Paths.DETAILBOOK;
+  static const BUKTIPEMINJAMAN = _Paths.BUKTIPEMINJAMAN;
+  static const HISTORYPEMINJAMAN = _Paths.HISTORYPEMINJAMAN;
+  static const BOOKBYKATEGORI = _Paths.BOOKBYKATEGORI;
 }
 
 abstract class _Paths {
@@ -25,4 +29,8 @@ abstract class _Paths {
   static const EXPLORER = '/explorer';
   static const BOOKMARK = '/bookmark';
   static const PROFILE = '/profile';
+  static const DETAILBOOK = '/detailbook';
+  static const BUKTIPEMINJAMAN = '/buktipeminjaman';
+  static const HISTORYPEMINJAMAN = '/historypeminjaman';
+  static const BOOKBYKATEGORI = '/bookbykategori';
 }
